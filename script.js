@@ -47,7 +47,7 @@ function isCollide(snake) {
 }
 
 function gameEngine() {
-  //   musicSound.play();
+  musicSound.play();
   // part 1 :  snake array ko update krenge and food render krrenge
   if (isCollide(snakeArr)) {
     // if snake collide with the boundary or self collision, then play gameover sound and reset the snake and initial game values.
@@ -56,7 +56,7 @@ function gameEngine() {
     inputDir = { x: 0, y: 0 };
     alert("Game over. Press any key to PLAY AGAIN !");
     snakeArr = [{ x: 5, y: 8 }];
-    // musicSound.play();
+    musicSound.play();
     score = 0;
   }
 
