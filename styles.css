@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=Montserrat:wght@400;500&family=Passions+Conflict&family=Press+Start+2P&family=VT323&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,24 @@
   align-items: center;
 }
 
+#scoreBox {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Press Start 2P", cursive;
+}
+
+#hiScoreBox {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Press Start 2P", cursive;
+}
+
 #board {
   background: linear-gradient(rgb(133, 228, 133), rgb(239, 239, 148));
   width: 92vmin;
@@ -24,16 +44,20 @@
 }
 
 .head {
-  background-color: red;
-  border-radius: 30%;
+  background-color: lightgrey;
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 40%;
+  transform: scale(1.05);
 }
 
 .snake {
-  background-color: purple;
+  background-color: pink;
+  border: 2px solid purple;
   border-radius: 50%;
 }
 
 .food {
-  background-color: darkolivegreen;
+  background-color: lightgreen;
+  border: 2px solid darkolivegreen;
   border-radius: 50%;
 }
